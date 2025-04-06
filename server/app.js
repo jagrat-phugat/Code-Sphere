@@ -11,7 +11,8 @@ const userRouter = require('./routes/user')
 
 const app = express()
 
-app.set('views', path.join(__dirname, 'dist'))
+app.use(express.static(path.join(__dirname, 'dist')));
+app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 
 app.use(logger('dev'))
