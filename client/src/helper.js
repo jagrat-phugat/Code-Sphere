@@ -9,7 +9,7 @@ export const removeClass = (e, className) => {
         el.classList.remove(className)
 }
 
-export const api_base_url = "http://localhost:3000"
+export const api_base_url = "https://code-sphere-backend-1.onrender.com"
 
 
 
