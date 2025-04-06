@@ -66,7 +66,7 @@ We're actively improving CodeSphere and here's what's coming next:
 
 ---
 
-## 🧪 Local Setup Instructions
+## Local Setup Instructions
 
 ```bash
 # Clone the repository
