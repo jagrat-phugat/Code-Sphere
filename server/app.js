@@ -24,6 +24,16 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use(cors({
     origin:"https://code-sphere-frontend-hmpi.onrender.com"
 }))
+app.use('/assets', express.static(path.join(__dirname, 'dist/assets'), {
+  setHeaders: (res, filePath) => {
+    if (filePath.endsWith('.css')) {
+      res.setHeader('Content-Type', 'text/css');
+    } else if (filePath.endsWith('.js')) {
+      res.setHeader('Content-Type', 'application/javascript');
+    }
+  }
+}));
+
 
 app.use('/', indexRouter)
 app.use('/users', userRouter)
