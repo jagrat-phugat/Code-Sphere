@@ -22,7 +22,7 @@ app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
 
 app.use(cors({
-    origin:"https://code-sphere-frontend-hmpi.onrender.com"
+    origin:"*"
 }))
 app.use('/assets', express.static(path.join(__dirname, 'dist/assets'), {
   setHeaders: (res, filePath) => {
