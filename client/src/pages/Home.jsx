@@ -4,7 +4,7 @@ import ListCard from '../components/ListCard';
 import GridCard from '../components/GridCard';
 import { api_base_url } from '../helper';
 import { useNavigate } from 'react-router-dom';
-import {bgImageHome} from '../images/bgImageHome.jpg';
+import bgImageHome from '../images/bgImageHome.jpg';
 
 const Home = () => {
   const [isGridLayout, setisGridLayout] = useState(false);
