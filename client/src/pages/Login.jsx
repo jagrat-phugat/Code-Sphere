@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { api_base_url } from '../helper';
-import bgImageHome from '../images/bgImageHome'
+import bgImageHome from '../images/bgImageHome.jpg'
 
 const Login = () => {
     const [email, setEmail] = useState("");
