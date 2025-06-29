@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { api_base_url } from '../helper';
+import {bgImageHome} from '../images/bgImageHome'
 
 const Login = () => {
     const [email, setEmail] = useState("");
@@ -41,7 +42,7 @@ const Login = () => {
     <>
        <div className="flex flex-col md:flex-row w-screen h-screen bg-gray-100"
        style={{
-        backgroundImage: `url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4_gLvY-SqG5p2c2FY7S3kQuofOAExEdN7Xw&s')`,
+        backgroundImage: `url(${bgImageHome})`,
       }}>
 
       <div className="flex flex-col items-center justify-center bg-black-600 text-white w-full md:w-1/2 p-10">
